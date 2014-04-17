@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" id="org.apache.cordova.sharedpreferences" version="1.0.0">
+    <name>SharedPreferences</name>
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+         <js-module src="www/androidpreferences.js" name="AndroidPreferences">
+            <clobbers target="AndroidPreferences" />
+        </js-module>
+	<platform name="android">
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="AndroidPreferences" >
+				<param name="android-package" value="org.apache.cordova.sharedpreferences"/>
+			</feature>
+		</config-file>	
+        <source-file src="src/org/apache/cordova/sharedpreferences/AndroidPreferences.java" target-dir="src/org/apache/cordova/sharedpreferences" />
+        <source-file src="src/org/apache/cordova/sharedpreferences/KeyStore.java" target-dir="src/org/apache/cordova/sharedpreferences" />
+		<source-file src="src/org/apache/cordova/sharedpreferences/SimpleCrypto.java" target-dir="src/org/apache/cordova/sharedpreferences" />
+    </platform>
+</plugin>
