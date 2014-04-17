@@ -7,8 +7,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.alpinemetrics.utilities.KeyStore;
-import com.alpinemetrics.utilities.SimpleCrypto;
+import org.apache.cordova.sharedpreferences.KeyStore;
+import org.apache.cordova.sharedpreferences.SimpleCrypto;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.util.Log;
