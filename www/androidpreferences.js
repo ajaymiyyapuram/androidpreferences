@@ -1,4 +1,3 @@
-cordova.define("cordova/plugin/androidpreferences", function (require, exports, module) {
     var exec = require("cordova/exec");
   module.exports = {
         get: function (message, win, fail) {
@@ -11,7 +10,7 @@ cordova.define("cordova/plugin/androidpreferences", function (require, exports, 
 			exec(win, fail, "AndroidPreferences", "clear", [message]);
 		}
     };
-});
+
 
 
 function handleAndroidPreferences(action, prefLib, prefName, prefValue, success, fail) {
