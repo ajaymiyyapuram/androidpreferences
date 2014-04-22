@@ -10,7 +10,7 @@
 	<platform name="android">
 		<config-file target="res/xml/config.xml" parent="/*">
 			<feature name="AndroidPreferences" >
-				<param name="android-package" value="org.apache.cordova.sharedpreferences"/>
+				<param name="android-package" value="org.apache.cordova.sharedpreferences.AndroidPreferences"/>
 			</feature>
 		</config-file>	
         <source-file src="src/org/apache/cordova/sharedpreferences/AndroidPreferences.java" target-dir="src/org/apache/cordova/sharedpreferences" />
