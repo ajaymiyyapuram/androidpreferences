@@ -1,4 +1,4 @@
-cordova.define("org.apache.cordova.sharedpreferences.AndroidPreferences", function(require, exports, module) {     var exec = require("cordova/exec");
+var exec = require("cordova/exec");
   module.exports = {
         get: function (message, win, fail) {
 			exec(win, fail, "AndroidPreferences", "get", [message]);
@@ -45,4 +45,3 @@ cordova.define("org.apache.cordova.sharedpreferences.AndroidPreferences", functi
 			}
  		}
     };
-});
